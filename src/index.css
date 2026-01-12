@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  --primary: #0EA5C9;
+  --accent: #1BB38C;
+
+  --background: #F7F9FA;
+  --foreground: #1E2A36;
+
+  --card: #FFFFFF;
+
+  --muted: #E8EAED;
+  --muted-foreground: #62707D;
+
+  --border: #DDE2E8;
+
+  --destructive: #EF4444;
+}
+
+
+.container{
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ;
+}
