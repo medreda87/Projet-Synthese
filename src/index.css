@@ -4,10 +4,11 @@
 
 
 
+
 :root {
   --primary: #0EA5C9;
   --accent: #1BB38C;
-
+  --background-primary-light: #F1FAFD;
   --background: #F7F9FA;
   --foreground: #1E2A36;
 
@@ -19,8 +20,23 @@
   --border: #DDE2E8;
 
   --destructive: #EF4444;
+  --text-gray : #62707D;
+  --text-dark : #1C2530;
 }
 
+@theme inline{
+  --primary: var(--primary);
+  --background-primary-light: var(--background-primary-light);
+}
+
+
+.container{
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ;
+}
+
+.title-hero-section span{
+  color : var(--primary)
+}
 
 .container{
   @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ;
