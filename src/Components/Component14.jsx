@@ -8,7 +8,7 @@ const Component14 = ({
 }) => {
   return (
     <div className="bg-primary-light min-h-[70vh] flex items-center justify-center px-4 py-12">
-      <div className="text-center max-w-4xl mx-auto">
+      <div className="text-center container">
         {/* About FreshFold Button */}
         <div className="mb-8">
           <button className="bg-[#E0F2FE] hover:bg-[#BAE6FD] text-[#0EA5C9] font-medium px-6 py-2 rounded-full transition-colors duration-200">
@@ -17,7 +17,7 @@ const Component14 = ({
         </div>
 
         {/* Main Headline */}
-        <h1 className="text-5xl md:text-6xl bg-background-primary-light title-hero-section lg:text-7xl font-bold mb-6 leading-tight"
+        <h1 className="text-5xl md:text-6xl bg-background-primary-light text-text-dark title-hero-section lg:text-7xl font-bold mb-6 leading-tight"
   dangerouslySetInnerHTML={{ __html: titlePart1 }} />
 
 
@@ -36,7 +36,7 @@ const Component14 = ({
                   <span className="text-white font-bold text-xl">{index + 1}</span>
                 </div>
                 {/* Step Text */}
-                <p className="text-[#1E2A36] text-lg leading-relaxed text-left pt-2">
+                <p className="text-text-gray text-lg leading-relaxed text-left pt-2">
                   {step}
                 </p>
               </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Router, Routes } from "react-router-dom";
 import Component14 from "./Components/Component14";
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
@@ -17,6 +18,8 @@ const App = () => {
         ]}
       />
       <Routes></Routes>
+
+      <Footer />
     </div>
   );
 };
