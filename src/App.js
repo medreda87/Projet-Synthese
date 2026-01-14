@@ -10,7 +10,6 @@ import Component18 from "./Components/Component18";
 import Component20 from "./Components/Component20";
 import Component9 from "./Components/Component9";
 import Component17 from "./Components/Component17";
-
 const App = () => {
   return (
     <div>
