@@ -5,6 +5,8 @@ import Component17 from '../Components/Component17'
 import Component18 from '../Components/Component18'
 import Component20 from '../Components/Component20'
 import Component3 from '../Components/Component3'
+import Component23 from '../Components/Component23'
+import Component24 from '../Components/Component24'
 
 const Home = () => {
   return (
