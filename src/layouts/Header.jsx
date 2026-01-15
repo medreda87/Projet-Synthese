@@ -10,7 +10,10 @@ import {
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/shops", label: "Find Shops" },
+  { href: "/services", label: "Services" },
   { href: "/how-it-works", label: "How It Works" },
+  { href: "/about", label: "About Us" },
+  { href: "/contact", label: "Contact" },
   { href: "/become-provider", label: "Become a Provider" },
 ];
 
@@ -91,12 +94,12 @@ export function Header() {
                 </Link>
               ))}
               <div className="flex flex-col gap-2 pt-4 border-t border-border mt-2">
-                <Button variant="outline" asChild>
+                <Button>
                   <Link to="/login" onClick={() => setIsMenuOpen(false)}>
                     Sign In
                   </Link>
                 </Button>
-                <Button variant="hero" asChild>
+                <Button size="md" >
                   <Link to="/become-provider" onClick={() => setIsMenuOpen(false)}>
                     Get Started
                   </Link>
