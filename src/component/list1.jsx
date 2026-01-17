@@ -9,11 +9,11 @@ import Item1 from './Item1';
 import Filter1 from './filter1'
 import { IoSearchOutline } from "react-icons/io5";
 import Header from './Header'
-
+import AddLaundryForm from './AddlaundryForm'
 function List1() {
 
 //  hadi la liste we les information dekol mesbana 
-    const laundries = [
+   const [laundries, setLaundries]= useState([
   {
     id: 1,
     verified: true,
@@ -43,7 +43,7 @@ function List1() {
   {
     id: 3,
     verified: true,
-    reviews:"220",
+    reviews:220,
     title: "EcoWash Laundromat",
     description:"100% organic and eco-friendly cleaning solutions. Good for your clothes and the planet.",
     rating: 4.8,
@@ -95,7 +95,7 @@ function List1() {
     services: ["Smart Wash", "Premium Dry Clean", "Subscription Plan"],
     image: img6
   }
-];
+]);
 
 // le traitement de input search
   const[search,setSearch]=useState("")
@@ -133,6 +133,22 @@ const isDirty =
     setFilter("All Services");
     setSortType("rating");
   }
+
+
+
+  const addLaundry = (newLaundry) => {
+  setLaundries((prev) => [
+    {
+      id: prev.length + 1,
+      ...newLaundry,
+      reviews: Number(newLaundry.reviews),
+      rating: Number(newLaundry.rating),
+      image: newLaundry.image, 
+    },
+    ...prev,
+  ]);
+};
+
   return (
 <div className="main-content">
 {/*  hada header deyalna */}
@@ -171,6 +187,7 @@ const isDirty =
         </div>
       )}
     </div>
+    <AddLaundryForm onAddLaundry={addLaundry} />
   </div>
 </div>
 
