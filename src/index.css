@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+*{
+  box-sizing: border-box;
+  
+}
+
+:root {
+  --primary: #0EA5C9;
+  --accent: #1BB38C;
+  --background-primary-light: #F1FAFD;
+  --background: #F7F9FA;
+  --foreground: #1E2A36;
+
+  --card: #FFFFFF;
+
+  --muted: #E8EAED;
+  --muted-foreground: #62707D;
+
+  --border: #DDE2E8;
+
+  --destructive: #EF4444;
+  --text-gray : #62707D;
+  --text-dark : #022545;
+}
+
+@theme inline{
+  --primary: var(--primary);
+  --background-primary-light: var(--background-primary-light);
+}
+
+
+.container{
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ;
+}
+
+.title-hero-section span{
+  color : var(--primary)
+}
+
+.title-section{
+  color: var(--text-dark);
+}
+.title-section span{
+  color : var(--primary)
+}
+
+.title-section span.highlight-pink {
+  position: relative;
+  color: var(--text-dark);
+  padding: 0 8px;
+}
+
+.title-section span.highlight-pink::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #fce7f3, #fee2e2);
+  border-radius: 4px;
+  z-index: -1;
+  padding: 4px 8px;
+  margin: -4px -8px;
+}
